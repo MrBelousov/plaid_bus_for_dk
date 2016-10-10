@@ -1,0 +1,8 @@
+<!-- Sidebar -->
+<ul class="nav nav-pills nav-stacked">
+  <% categories_for_menu.each do |brand| %>
+      <li class="nav-item">
+        <%= link_to brand.name, category_path(brand), class: 'nav-link' %>
+      </li>
+  <% end %>
+</ul>
